@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://8t5hupgsw23u"]
+
+[ext_resource type="Script" uid="uid://3uch7q4l2tse" path="res://prefabs/player/player.gd" id="1_rdx4y"]
+[ext_resource type="Texture2D" uid="uid://in8jvgjhbamy" path="res://icon.svg" id="2_wv1mm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_binfn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_wv1mm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_klv5p"]
+
+[node name="player" type="Area2D" unique_id=876341664]
+script = ExtResource("1_rdx4y")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2018949801]
+sprite_frames = SubResource("SpriteFrames_binfn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=900884199]
+shape = SubResource("CapsuleShape2D_klv5p")
