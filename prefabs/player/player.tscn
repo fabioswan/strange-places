@@ -15,8 +15,10 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_klv5p"]
+radius = 66.0
+height = 132.0
 
-[node name="player" type="Area2D" unique_id=876341664]
+[node name="player" type="CharacterBody2D" unique_id=176333691]
 script = ExtResource("1_rdx4y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2018949801]

@@ -6,11 +6,11 @@
 
 [node name="Node2D" type="Node2D" unique_id=1438566158]
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1549203639]
-position = Vector2(527, 646)
+[node name="Floor" type="StaticBody2D" parent="." unique_id=157078640]
+position = Vector2(650, 722)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=951551686]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=951551686]
 shape = SubResource("WorldBoundaryShape2D_g7g4h")
 
 [node name="player" parent="." unique_id=876341664 instance=ExtResource("1_g7g4h")]
-position = Vector2(527, 275)
+position = Vector2(657, 414)
