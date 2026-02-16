@@ -93,7 +93,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -151,7 +151,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk",
-"speed": 5.0
+"speed": 7.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_klv5p"]
@@ -163,7 +163,7 @@ script = ExtResource("1_rdx4y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2018949801]
 sprite_frames = SubResource("SpriteFrames_hvqk4")
-animation = &"push"
+animation = &"walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=900884199]
 shape = SubResource("CapsuleShape2D_klv5p")
