@@ -6,7 +6,7 @@ var GRAVITY = ProjectSettings.get_setting("physics/2d/default_gravity")
 @export var DECEL_RATE = 5
 @export var JUMP_PWR = 400
 
-# Called when the node enters the scene tree for the first time.
+# Called when the node enters the scene tree for the first time.asdd
 func _ready() -> void:
 	pass # Replace with function body.
 
